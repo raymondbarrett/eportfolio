@@ -3,3 +3,7 @@
   font-family: "Raleway";
   src: url("../fonts/Raleway-Thin.ttf") format("truetype");
 }
+.h1
+{
+  font-family: "Raleway";
+}
