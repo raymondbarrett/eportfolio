@@ -32,7 +32,6 @@ ul
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background: #9c9c9c;
 }
 
 li
@@ -46,7 +45,7 @@ li a
   font-size: 30px;
   letter-spacing = 5px;
   display: block;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   padding: 16px;
   text-decoration: none;
@@ -54,5 +53,5 @@ li a
 
 li a:hover
 {
-  color: #ffffff;
+  background: #3a3a3a;
 }
