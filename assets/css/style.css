@@ -24,8 +24,10 @@ h1
 
 ul
 {
+  position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
   list-style-type: none;
   overflow: hidden;
   margin: 0;
