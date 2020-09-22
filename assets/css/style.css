@@ -21,6 +21,7 @@ h1
   left: 0;
   text-align: center;
 }
+
 ul
 {
   width: 100%;
@@ -30,10 +31,12 @@ ul
   padding: 0;
   background: #9c9c9c;
 }
+
 li
 {
  float: left;
 }
+
 li a
 {
   display: block;
@@ -46,6 +49,7 @@ li a
   margin: 0;
   padding: 0;
 }
+
 li a:hover
 {
   color: #ffffff;
