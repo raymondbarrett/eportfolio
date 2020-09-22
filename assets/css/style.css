@@ -38,6 +38,9 @@ li
 
 li a
 {
+  font-family: "Raleway";
+  font-size: 30px;
+  letter-spacing = 5px;
   display: block;
   color: #ffffff;
   text-align: center;
