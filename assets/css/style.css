@@ -21,3 +21,15 @@ h1
   left: 0;
   text-align: center;
 }
+header
+{
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 30px;
+  letter-spacing: 5px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 5%;
+  left: 5%;
+}
