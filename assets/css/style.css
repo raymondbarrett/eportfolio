@@ -34,10 +34,23 @@ h1
   overflow: hidden;
   
 }
-color: #ffffff;
+li
+{
+ float: left;
+}
+li a
+{
+  display: block;
+  text-decoration: none;
+  color: #000000;
   font-family: "Raleway";
   font-size: 30px;
   letter-spacing: 5px;
   position: absolute;
   margin: 0;
   padding: 0;
+}
+li a:hover
+{
+  color: #ffffff;
+}
