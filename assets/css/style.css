@@ -27,7 +27,7 @@ h1
   top: 0;
   left: 0;
 }
-.header-elements ul
+ul .header-elements
 {
   width: 100%;
   list-style-type: none;
