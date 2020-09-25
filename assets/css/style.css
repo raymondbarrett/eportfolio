@@ -11,7 +11,7 @@
 @font-face
 {
   font-family: "Open Sans Thin";
-  src: url("../fonts/OpenSans-Thin.ttf");
+  src: url("../fonts/OpenSans-Light.ttf");
 }
 body
 {
@@ -34,7 +34,7 @@ h1
 h2
 {
   position: relative;
-  top: 10%;
+  top: 30px;
   color: #ffffff;
   font-family: "Raleway";
   font-size: 60px;
