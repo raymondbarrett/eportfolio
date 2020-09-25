@@ -33,20 +33,22 @@ h1
 }
 h2
 {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   position: relative;
   top: 20px;
-  left: 25px;
+  left: 20px;
   color: #ffffff;
   font-family: "Raleway";
   font-size: 60px;
 }
 .sectionp
 {
+  overflow: hidden;
   position: relative;
-  top: 10px;
-  left: 20px;
+  top: 20px;
+  left: 25px;
   color: #ffffff;
   font-family: "Open Sans Thin";
   font-size: 20px;
