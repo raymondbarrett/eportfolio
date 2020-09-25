@@ -33,6 +33,7 @@ h1
 }
 h2
 {
+  width: 1800px;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -45,6 +46,7 @@ h2
 }
 .sectionp
 {
+  width: 1800px;
   overflow: hidden;
   position: relative;
   top: 20px;
