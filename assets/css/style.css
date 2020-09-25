@@ -42,9 +42,10 @@ h2
   font-family: "Raleway";
   font-size: 60px;
 }
-p
+.sectionp
 {
   position: relative;
+  top: 10px;
   left: 20px;
   color: #ffffff;
   font-family: "Open Sans Thin";
