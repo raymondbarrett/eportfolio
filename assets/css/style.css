@@ -90,3 +90,18 @@ li a:hover
 {
   background: #3a3a3a;
 }
+
+.timeline
+{
+  border-left: 4px solid white;
+  height: 1200px;
+  width: 10px;
+}
+.timeline-elements
+{
+  padding: 10px;
+  display: inline;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 30px;
+}
