@@ -73,7 +73,6 @@ li
 {
   float: left;
 }
-
 li a
 {
   font-family: "Raleway";
@@ -85,11 +84,11 @@ li a
   padding: 16px;
   text-decoration: none;
 }
-
 li a:hover
 {
   background: #3a3a3a;
 }
+
 .viewport
 {
   position: absolute;
