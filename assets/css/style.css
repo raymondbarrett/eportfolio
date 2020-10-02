@@ -55,7 +55,10 @@ h2
   font-family: "Open Sans Thin";
   font-size: 20px;
 }
-
+.sectionp a
+{
+  color: white;
+}
 ul
 {
   position: relative;
@@ -115,3 +118,4 @@ h4 a
 {
   color: white;
 }
+
