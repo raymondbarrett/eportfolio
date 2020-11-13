@@ -44,6 +44,18 @@ h2
   font-family: "Raleway";
   font-size: 60px;
 }
+h3
+{
+  width: 1800px;
+  overflow: hidden;
+  margin: 0;
+  padding: 20 0 20 0;
+  position: relative;
+  left: 25px;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 60px;
+}
 .sectionp
 {
   width: 1800px;
