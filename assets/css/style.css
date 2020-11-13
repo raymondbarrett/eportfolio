@@ -48,8 +48,7 @@ h3
 {
   width: 80%;
   overflow: hidden;
-  margin: 0;
-  padding: 20 0 20 0;
+  margin: -20,0,20,0;
   position: relative;
   left: 25px;
   color: #ffffff;
