@@ -1,1 +1,38 @@
-
+<html>
+  <head>
+    <title>raymond barrett | covid simulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "../assets/css/style.css">
+  </head>
+  <body>
+    <ul>
+      <li><a href = "../index">home</a></li>
+      <li><a href = "../about">about</a></li>
+      <li><a href = "../projects">projects</a></li>
+      <li><a href = "../downloads">downloads</a></li>
+    </ul>
+    <h2>the creation of the covid cascade simulation</h2>
+    <p class = "sectionp">At the heart of this model is a large undirected graph.<br>
+                          The idea is simple. If a matrix A can be constructed such that: <br>
+                          A(i,j) = A(j,i) = chance of either node i or j getting infected given that the other gets infected,<br>
+                          we can perform the multiplication A<span style: "font-weight: bold;">x</span>, and the resultant vector<br>
+                          will be the probability that each node gets infected on the next step.<br>
+                          The next challenge is generating A.<br><br>
+                          Currently, the model uses the idea of clustered communities inside residence halls,<br>
+                          meaning that each residence hall is split into floors, with a set chance of infection between floormates,<br>
+                          and each floor is split into rooms, with roommates having a set chance of infection between them.<br>
+                          The weights of the edges are different depending on the style of dorm; apartment-style dorms will have<br>
+                          a lower intra-floor spread probability compared to traditional-style<br>
+                          dorms with shared bathrooms.<br>
+                          Then, a set number of inter-residence hall communities are created.<br>
+                          This represents clubs, classes, or just going out with friends.<br>
+                          A set number of communities are created, each having a random community size based on a normal distribution<br>
+                          and a random intracommunity weight based on another normal distribution.<br>
+                          Finally, the last row is connected to every individual at the school and represents the chance of<br>
+                          an individual getting infected by someone from outside the institute.<br><br>
+                          Next, as an individual gets infected, a countdown gets triggered for that node, representing the delay<br>
+                          while that individual gets tested, or exhibits symptoms and is quarantined. When the countdown hits 0,<br>
+                          the individual is permanently removed from the system.<br>
+                          This draws heavily upon the SEIR model of disease modeling.</p>
+  </body>
+</html>
