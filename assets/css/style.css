@@ -33,7 +33,7 @@ h1
 }
 h2
 {
-  width: 1800px;
+  width: 80%;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -46,7 +46,7 @@ h2
 }
 h3
 {
-  width: 1800px;
+  width: 80%;
   overflow: hidden;
   margin: 0;
   padding: 20 0 20 0;
@@ -58,7 +58,7 @@ h3
 }
 .sectionp
 {
-  width: 1800px;
+  width: 80%;
   overflow: hidden;
   position: relative;
   top: 20px;
