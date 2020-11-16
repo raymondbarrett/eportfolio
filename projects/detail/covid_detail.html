@@ -12,27 +12,31 @@
       <li><a href = "../downloads">downloads</a></li>
     </ul>
     <h2>the creation of the covid cascade simulation</h2>
-    <p class = "sectionp">At the heart of this model is a large undirected graph.<br>
-                          The idea is simple. If a matrix A can be constructed such that: <br>
-                          A(i,j) = A(j,i) = chance of either node i or j getting infected given that the other gets infected,<br>
-                          we can perform the multiplication A<span style: "font-weight: bold;">x</span>, and the resultant vector<br>
-                          will be the probability that each node gets infected on the next step.<br>
-                          The next challenge is generating A.<br><br>
-                          Currently, the model uses the idea of clustered communities inside residence halls,<br>
-                          meaning that each residence hall is split into floors, with a set chance of infection between floormates,<br>
-                          and each floor is split into rooms, with roommates having a set chance of infection between them.<br>
-                          The weights of the edges are different depending on the style of dorm; apartment-style dorms will have<br>
-                          a lower intra-floor spread probability compared to traditional-style<br>
-                          dorms with shared bathrooms.<br>
-                          Then, a set number of inter-residence hall communities are created.<br>
-                          This represents clubs, classes, or just going out with friends.<br>
-                          A set number of communities are created, each having a random community size based on a normal distribution<br>
-                          and a random intracommunity weight based on another normal distribution.<br>
-                          Finally, the last row is connected to every individual at the school and represents the chance of<br>
-                          an individual getting infected by someone from outside the institute.<br><br>
-                          Next, as an individual gets infected, a countdown gets triggered for that node, representing the delay<br>
-                          while that individual gets tested, or exhibits symptoms and is quarantined. When the countdown hits 0,<br>
-                          the individual is permanently removed from the system.<br>
-                          This draws heavily upon the SEIR model of disease modeling.</p>
+    <p class = "sectionp">The basic premise behind this simulation is quite simple and is based in the SEIR model.<br>
+                          In the SEIR model, individuals go from being susceptible to exposed, infected and finally removed/recover.<br>
+                          My model uses a large undirected graph to model the interaction between individuals in each of these stages.<br>
+                          In theory,  if we could generate a large matrix A such that A(i,j) = A(j,i) = the chance of infection between nodes i and j,<br>
+                          we can compute the vector multiplication of A by a column vector where each infected node is represented by a 1,<br>
+                          and the resultant vector would be the probability of infection for each node.<br><br>
+                          When algorithmically generating A, I tried to first use an approach that modeled concentric communities.<br>
+                          I defined likelihoods of spread for individuals living in the same room, floor and building<br>
+                          and I used available floor plans to approximate the shape of each building.<br>
+                          I couldn't find reliable data on Greek housing so I approximated the number of people living in each house.<br>
+                          The resulting matrix is 9056 x 9056, which is about accurate for the student population living on campus.<br><br>
+                          However, residence halls are not the only way that the disease can spread.<br>
+                          After generating the skeleton for our matrix, I pseudorandomly defined interpersonal communities.<br>
+                          These represent classes, clubs, or just going somewhere with friends.<br>
+                          The idea of distinct communities with links between them is often observed in real data<br>
+                          and is how the known "6 degrees of separation" works.<br>
+                          Finally, one additional row and column is added to the matrix. This node is connected to every node in the<br>
+                          network and represents the probability that someone is infected by an individual outside of the residence halls.<br>
+                          This node is always assumed to be positive.<br><br>
+                          Once A is generated, we compute the multiplication of Ax, where x is a vector with 0's representing healthy individuals<br>
+                          and 1's representing infectious individuals. This multiplication yields a vector of probabilities, where each<br>
+                          value is the probability of that node is infected. After some random number generation, we calculate our new x vector<br><br>
+                          Once nodes are infected, the removal code gets triggered. A pseudorandom number is generated representing testing/quarantine lag<br>
+                          and it counts down each day. When it hits 0 the node is removed.<br><br>
+                          The next steps for this project would be to allow for more dynamic shifting of the matrix A, but that has yet to be implemented.
+    </p>
   </body>
 </html>
