@@ -129,18 +129,19 @@ li a:hover
   height: 150px;
   background-color: #ffffff;
   position: relative;
-  top: 200px;
+  top: 0px;
   color: #000000;
   font-family: "Open Sans Thin";
   font-size: 20px;
+}
+.img-caption a
+{
+  text-decoration: none;
 }
 .proj-img
 {
   height: 200px;
   border-radius: 20px 20px 0px 0px;
 }
-h4 a
-{
-  color: white;
-}
+
 
