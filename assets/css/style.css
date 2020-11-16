@@ -103,27 +103,41 @@ li a:hover
   background: #3a3a3a;
 }
 
-.timeline
-{
-  position: relative;
-  top: 50px;
-  left: 100px;
-  border-left: 4px solid white;
-  height: 680px;
-  width: 10px;
-  overflow: hidden;
-}
 .timeline-elements
 {
-  width: 60%;
+  width: 200px;
   position: absolute;
-  left: 120px;
-  top: 140px;
   padding: 10px;
-  color: #ffffff;
+}
+.row1
+{
+  position: absolute;
+  top: 200px;
+}
+.col1
+{
+  position: absolute;
+  left: 50px;
+}
+.col2
+{
+  position: absolute;
+  left: 270px;
+}
+.img-caption
+{
+  height: 150px;
+  background-color: #ffffff;
+  position: relative;
+  top: 200px;
+  color: #000000;
   font-family: "Open Sans Thin";
-  font-size: 30px;
-  overflow: hidden;
+  font-size: 20px;
+}
+.proj-img
+{
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
 }
 h4 a
 {
