@@ -112,7 +112,7 @@ li a:hover
 .row1
 {
   position: absolute;
-  top: 50px;
+  top: 75px;
 }
 .col1
 {
@@ -129,16 +129,11 @@ li a:hover
   height: 60px;
   background-color: #ffffff;
   position: relative;
-  padding: 0px;
-  margins: 0px;
-  top: 0px;
+  top: -30px;
   color: #000000;
   font-family: "Open Sans Thin";
   font-size: 20px;
-}
-.img-caption a
-{
-  text-decoration: none;
+  text-align: center;
 }
 .proj-img
 {
@@ -152,6 +147,5 @@ h4
 .proj-link
 {
   text-decoration: none;
-  padding: 0;
 }
 
