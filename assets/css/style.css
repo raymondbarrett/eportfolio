@@ -112,7 +112,7 @@ li a:hover
 .row1
 {
   position: absolute;
-  top: 20px;
+  top: 50px;
 }
 .col1
 {
@@ -122,7 +122,7 @@ li a:hover
 .col2
 {
   position: absolute;
-  left: 270px;
+  left: 350px;
 }
 .img-caption
 {
@@ -149,8 +149,9 @@ h4
 {
   padding: 5px;
 }
-h4 a
+.proj-link
 {
   text-decoration: none;
+  padding: 0;
 }
 
