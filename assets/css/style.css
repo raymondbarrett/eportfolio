@@ -112,7 +112,7 @@ li a:hover
 .row1
 {
   position: absolute;
-  top: 0px;
+  top: 20px;
 }
 .col1
 {
@@ -126,7 +126,7 @@ li a:hover
 }
 .img-caption
 {
-  height: 50px;
+  height: 60px;
   background-color: #ffffff;
   position: relative;
   top: 0px;
@@ -143,5 +143,12 @@ li a:hover
   height: 200px;
   border-radius: 20px 20px 0px 0px;
 }
-
+h4
+{
+  padding: 5px;
+}
+h4 a
+{
+  text-decoration: none;
+}
 
