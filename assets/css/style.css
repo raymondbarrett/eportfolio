@@ -129,6 +129,8 @@ li a:hover
   height: 60px;
   background-color: #ffffff;
   position: relative;
+  padding: 0px;
+  margins: 0px;
   top: 0px;
   color: #000000;
   font-family: "Open Sans Thin";
