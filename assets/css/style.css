@@ -123,6 +123,21 @@ li a:hover
   position: absolute;
   left: 350px;
 }
+.col3
+{
+  position: absolute;
+  left: 650px;
+}
+.col4
+{
+  position: absolute;
+  left: 950px;
+}
+.row2
+{
+  position: absolute;
+  top: 500px;
+}
 .img-caption
 {
   height: 60px;
