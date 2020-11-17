@@ -162,4 +162,11 @@ h4
 {
   text-decoration: none;
 }
-
+aboutmep
+{
+  padding: 10px;
+  font-family: "Open Sans Thin";
+  font-size: 20px;
+  position: relative;
+  left: 50px;
+}
