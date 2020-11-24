@@ -179,5 +179,9 @@ h4
 .detailimage
 {
   width: 500px;
+}
+.right-panel
+{
+  position: absolute;
   left: 1300px;
 }
